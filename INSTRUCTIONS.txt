@@ -1,0 +1,81 @@
+EduBuddy Deployment Instructions
+===============================
+
+This zip contains everything needed for a full-stack EduBuddy deployment (FastAPI backend, React frontend, Dockerfiles).
+
+-----------------------------
+1. Directory Structure
+-----------------------------
+Copy files into this structure:
+
+- backend/
+    - main.py
+    - requirements.txt
+    - quiz_questions.json
+    - Dockerfile
+    - api/
+        - predict.py         <--- Copy from your ML repo!
+        - models_bundles/    <--- Your model files (.joblib etc.)
+
+- frontend/
+    - src/
+        - App.js
+        - HomePage.js
+        - QuizPage.js
+        - ActivityForm.js
+        - ProfilePage.js
+    - package.json
+    - Dockerfile
+    - public/
+        - index.html         <--- Standard React index.html
+
+- INSTRUCTIONS.txt           <--- This file
+
+-----------------------------
+2. Backend Setup
+-----------------------------
+- Install Docker if not present.
+- Place your ML model files in backend/api/models_bundles/.
+- Place your predict.py from your repo in backend/api/.
+- From the backend directory, build and run:
+
+    docker build -t edubuddy-backend .
+    docker run -p 8000:8000 edubuddy-backend
+
+- Or deploy to Railway with the Dockerfile (it will run uvicorn on port 8000).
+
+-----------------------------
+3. Frontend Setup
+-----------------------------
+- Place all JS files in frontend/src/.
+- Place package.json in frontend/.
+- Place Dockerfile in frontend/.
+- Place index.html in frontend/public/.
+- From the frontend directory, build and run:
+
+    docker build -t edubuddy-frontend .
+    docker run -p 80:80 edubuddy-frontend or docker run -p 8000:80 edubuddy-frontend 
+    check on http://localhost:8000/ (local)
+
+- Or deploy to Railway/Vercel as a static site (using the Dockerfile).
+
+-----------------------------
+4. Connecting Both
+-----------------------------
+- The frontend will connect to the backend on /api/ (proxy specified in package.json).
+- For production, set the backend API URL in the frontend if on different domains.
+
+-----------------------------
+5. Usage
+-----------------------------
+- Students visit the frontend URL.
+- Enter Student ID and Name -> Take Quiz -> Enter activity features -> See results/profile.
+- Results include quiz-based style, AI-predicted style, comparison, recommended strategies, chart, and activity log.
+
+-----------------------------
+6. Notes
+-----------------------------
+- For production, secure both frontend and backend (CORS, HTTPS, etc.).
+- Use a persistent DB if you want to store student results and logs.
+- You may customize quiz questions, strategies, and activity fields as needed.
+

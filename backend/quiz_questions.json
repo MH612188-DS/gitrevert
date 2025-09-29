@@ -1,0 +1,82 @@
+[
+    {
+        "question": "When I learn something new, I prefer to…",
+        "options": [
+            {"text": "See pictures or diagrams", "style": "Visual"},
+            {"text": "Listen and discuss with others", "style": "Auditory"},
+            {"text": "Practice and try it out", "style": "Kinesthetic"}
+        ]
+    },
+    {
+        "question": "I remember things best when I…",
+        "options": [
+            {"text": "Read or look at images", "style": "Visual"},
+            {"text": "Hear explanations", "style": "Auditory"},
+            {"text": "Do it myself", "style": "Kinesthetic"}
+        ]
+    },
+    {
+        "question": "I prefer studying by…",
+        "options": [
+            {"text": "Using diagrams or charts", "style": "Visual"},
+            {"text": "Talking about it", "style": "Auditory"},
+            {"text": "Physical activities", "style": "Kinesthetic"}
+        ]
+    },
+    {
+        "question": "When solving problems, I...",
+        "options": [
+            {"text": "Draw or visualize", "style": "Visual"},
+            {"text": "Talk through it", "style": "Auditory"},
+            {"text": "Try different approaches", "style": "Kinesthetic"}
+        ]
+    },
+    {
+        "question": "I like teachers who...",
+        "options": [
+            {"text": "Use visual aids", "style": "Visual"},
+            {"text": "Explain verbally", "style": "Auditory"},
+            {"text": "Encourage participation", "style": "Kinesthetic"}
+        ]
+    },
+    {
+        "question": "My notes are mostly...",
+        "options": [
+            {"text": "Pictures/graphs", "style": "Visual"},
+            {"text": "Written words", "style": "Auditory"},
+            {"text": "Experiments/examples", "style": "Kinesthetic"}
+        ]
+    },
+    {
+        "question": "I prefer instructions that...",
+        "options": [
+            {"text": "Show what to do", "style": "Visual"},
+            {"text": "Tell what to do", "style": "Auditory"},
+            {"text": "Let me try", "style": "Kinesthetic"}
+        ]
+    },
+    {
+        "question": "When I’m confused, I...",
+        "options": [
+            {"text": "Look for diagrams", "style": "Visual"},
+            {"text": "Ask someone", "style": "Auditory"},
+            {"text": "Figure out by doing", "style": "Kinesthetic"}
+        ]
+    },
+    {
+        "question": "I like learning materials that...",
+        "options": [
+            {"text": "Are colorful", "style": "Visual"},
+            {"text": "Have audio", "style": "Auditory"},
+            {"text": "Are interactive", "style": "Kinesthetic"}
+        ]
+    },
+    {
+        "question": "I understand a process better when...",
+        "options": [
+            {"text": "I see a flowchart", "style": "Visual"},
+            {"text": "I hear an explanation", "style": "Auditory"},
+            {"text": "I try it out", "style": "Kinesthetic"}
+        ]
+    }
+]
